@@ -1,0 +1,32 @@
+<p>not-found works!</p>
+<ul>
+    <li >
+        <a routerLink="/authLazy/login">ir a login</a>   
+    </li>
+    <li >
+        <a routerLink="/authLazy/enroll">ir a Registro</a>   
+    </li>
+    <li >
+        <a routerLink="/pokedex/pokedex">ir a Pokedex</a>   
+    </li>
+
+    <li >
+        <a routerLink="/pokedex/add">Agregar</a>   
+    </li>
+
+    <li >
+        <a routerLink="/pokedex/find">Encontrar</a>   
+    </li>
+    <li >
+        <a routerLink="/pokedex/list">ir a Listar</a>   
+    </li>
+    <li >
+        <a routerLink="/pokedex/pokemon/1">ir a Pokemon</a>   
+    </li>
+    <button (click)="login()">Login</button>
+    <button (click)="loginout()">Out</button>
+    <p>
+        {{showSession()}}
+    </p>
+
+</ul>
