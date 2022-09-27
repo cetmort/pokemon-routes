@@ -23,8 +23,24 @@
     <li >
         <a routerLink="/pokedex/pokemon/1">ir a Pokemon</a>   
     </li>
+
+    <div>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="form-grup">
+                <label for="UserName">User: </label>
+                <input type="text" formControlName="username" class="form-control" autocomplete="new_userName"> 
+            </div>
+            <div class="form-grup">
+                <label for="">Password: </label>
+                <input type="password" formControlName="password" class="form-control" autocomplete="new_password">
+            </div>
+                <input type="text" formControlName="userName" class="form-control" autocomplete="new_userName"> 
+            <button >Login</button>
+        </form>
+    </div>
+
     <button (click)="login()">Login</button>
-    <button (click)="loginout()">Out</button>
+    <button (click)="logout()">Out</button>
     <p>
         {{showSession()}}
     </p>
